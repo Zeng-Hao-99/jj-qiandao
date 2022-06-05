@@ -6,11 +6,11 @@ const {
   AID,
   UUID
 } = require('./lib/config')
-const message = require('./lib/message')
+// const message = require('./lib/message')
 
 if (!COOKIE) return message('获取不到cookie，请检查设置')
 
-const { autoGame } = require('./lib/game/autoGame')
+// const { autoGame } = require('./lib/game/autoGame')
 
 const api = require('./lib/api')(COOKIE)
 
@@ -120,8 +120,8 @@ async function collectBug() {
   message(dipMsg)
 
   if (!USERID) return message('获取不到uid，请检查设置')
-  autoGame()
-  message('游戏运行中...')
+//   autoGame()
+//   message('游戏运行中...')
 
   if (!AID) return message('获取不到AID，请检查设置')
   if (!UUID) return message('获取不到UUID，请检查设置')
